@@ -80,6 +80,7 @@ body {
 .bloco2 {
   margin: 1vw;
   padding: 1vw;
+  overflow-y: hidden;
 }
 
 .perguntaIntrodutoria {
@@ -194,4 +195,24 @@ h4 {
   .coluna1 {
     margin-bottom: 5rem;
   }
+
+  .gridContainer{
+    /* CONTAINER PRINCIPAL */
+   grid-template-areas: 
+   "mainContent"
+   "sidebarContent";
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+  }
+}
+
+.gridContainer{
+  /* GRIDCONTAINER É O CONTAINER PRINCIPAL DO CODIGO */
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* define os 3 frames da esquerda e mais 1 da direita */
+  grid-template-areas: "mainContent sidebarContent";
+  padding: 20px;
+  flex: 1 0 auto;
 }

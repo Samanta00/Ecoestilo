@@ -1,7 +1,7 @@
 import React from "react";
+import CardHome from "../../component/CardHome/CardHome";
+import sideBarContent from "../../component/sidebarContent/sidebarContent";
 import "./conteudo.css";
-
-
 
 function Conteudo() {
   const virarCarta = () => {
@@ -20,19 +20,13 @@ function Conteudo() {
           {/* <hr /> */}
           <h1 className="tema">Ecoestilo</h1>
           <div className="blocoEsquerdoPrincipal">
-       
-
             <article className="font">
               <p className="link">
                 fonte:https://br.freepik.com/vetores-premium/logotipo-do-medico-dentista-segurando-o-desenho-do-mascote-do-desenho-animado-de-dente-triste_11686850.htm
               </p>
             </article>
-            <div className="blocoDireitoPrincipal">
-      
+            <div className="blocoDireitoPrincipal"></div>
           </div>
-          </div>
-
-          
         </div>
       </div>
       <hr />
@@ -51,8 +45,11 @@ function Conteudo() {
           </h4>
         </div>
 
-        <div className="blocosenta">
-    
+        <div className="blocosenta"></div>
+
+        <div className="gridContainer">
+          <CardHome />
+          <sideBarContent />
         </div>
 
         <div className="colunao">
@@ -62,9 +59,7 @@ function Conteudo() {
               Não sofro com A doença, Como o Sistema Poderia me Ajudar?
             </h4>
             <div className="flip" id="card" onClick={virarCarta}>
-              <div className="face" id="front">
-               
-              </div>
+              <div className="face" id="front"></div>
 
               <div className="face" id="back">
                 O Projeto de Software tras diversas formas educacionais e
@@ -81,9 +76,7 @@ function Conteudo() {
               Sofro com A doença, Como o Sistema Poderia me Ajudar?
             </h4>
             <div className="flip" id="card" onClick={virarCarta}>
-              <div className="face" id="front">
-         
-              </div>
+              <div className="face" id="front"></div>
 
               <div className="face" id="back">
                 Na Plataforma do Sistema de Software existem alguns cuidados
