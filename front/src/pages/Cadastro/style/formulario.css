@@ -1,0 +1,26 @@
+.titulo{
+    text-align: center;
+}
+.tituloForm{
+    font-size: 1.0vw;
+}
+.class-mae{
+    width: 100%;
+    max-width: 400px;
+    height: 550px;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff10;
+    border: 2px solid #ffffff30;
+    backdrop-filter: blur(50px);
+}
+input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+    
+}
