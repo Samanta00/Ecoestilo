@@ -1,6 +1,5 @@
 import React from "react";
-import CardHome from "../../component/CardHome/CardHome";
-import sideBarContent from "../../component/sidebarContent/sidebarContent";
+import HomeContent from "../../component/HomeContent";
 import "./conteudo.css";
 
 function Conteudo() {
@@ -47,10 +46,7 @@ function Conteudo() {
 
         <div className="blocosenta"></div>
 
-        <div className="gridContainer">
-          <CardHome />
-          <sideBarContent />
-        </div>
+        <HomeContent />
 
         <div className="colunao">
           <div className="coluna1">
