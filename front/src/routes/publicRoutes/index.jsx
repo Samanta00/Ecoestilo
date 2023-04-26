@@ -4,13 +4,13 @@ import { Route } from 'react-router-dom';
 // import PagesLogin from '../../pages/Login/login';
 // import Cadastro from '../../pages/Cadastro/postCadastro/cadastro'
 import PagesHome from '../../pages/Home/home';
-import Conteudo from '../../pages/Quiz/index';
+import Parcerias from '../../pages/Parcerias';
 
 
 export const PublicRoutes = () => (
   <React.Fragment>
     <Route path="/" element={<PagesHome />}/>
-    <Route path='/recomendacoes' element={<Conteudo/>}/>
+    <Route path='/parcerias' element={<Parcerias />}/>
 
   </React.Fragment>
 )

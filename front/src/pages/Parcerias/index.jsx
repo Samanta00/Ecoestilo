@@ -5,19 +5,17 @@ import './quiz.css'
 
 import Navbar from '../../component/NavBar';
 // import ModalOptions from '../../component/NavBar/ModalOptions';
+import Banner from '../../component/Banner'
 
-
-
-
-
-function Quiz() {
+function Parcerias() {
   return (
     <>
-      <Navbar/>
-      <Conteudo/>
+      <Navbar />
+      <Banner />
+      <Conteudo />
     </>
 
   )
 };
 //  <ModalOptions/>
-export default Quiz;
+export default Parcerias;

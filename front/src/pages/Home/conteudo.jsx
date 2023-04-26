@@ -2,6 +2,8 @@ import React from "react";
 import HomeContent from "../../component/HomeContent";
 import "./conteudo.css";
 
+import rodapeMarcas from "./brands-sprite.png";
+
 function Conteudo() {
   const virarCarta = () => {
     const card = document.querySelectorAll("#card");
@@ -15,23 +17,24 @@ function Conteudo() {
   return (
     <>
       <div className="divMae">
-        <div className="bloco1">
-          {/* <hr /> */}
-          <h1 className="tema">Ecoestilo</h1>
-          <div className="blocoEsquerdoPrincipal">
-            <article className="font">
-              <p className="link">
-                fonte:https://br.freepik.com/vetores-premium/logotipo-do-medico-dentista-segurando-o-desenho-do-mascote-do-desenho-animado-de-dente-triste_11686850.htm
-              </p>
-            </article>
-            <div className="blocoDireitoPrincipal"></div>
+        <div className="container">
+          <div className="content">
+            <h2>
+              Não jogue fora, transforme.
+            </h2>
+            <p>
+              Transforme o seu estilo em um <span>Ecoestilo</span>: junte-se a nós no combate ao descarte indevido de tecidos e ajude a preservar o planeta com a <span>Ecoestilo</span>.
+            </p>
+          </div>
+          <div class="buttons">
+            <button className="buttonRight">Sobre nós</button>
+            <button className="buttonLeft">Parcerias</button>
           </div>
         </div>
       </div>
-      <hr />
 
       <div className="bloco2">
-        <h3 className="perguntaIntrodutoria">
+        {/* <h3 className="perguntaIntrodutoria">
           O'que eu aprenderei com esse sistema de software?
         </h3>
 
@@ -42,9 +45,13 @@ function Conteudo() {
             uma forma divertida e educativa Pessoas que sofram ou não com a
             doença{" "}
           </h4>
-        </div>
+        </div> */}
 
         <div className="blocosenta"></div>
+
+        <div className="rodapeMarcas">
+          <img src={rodapeMarcas} alt="" />
+        </div>
 
         <HomeContent />
 

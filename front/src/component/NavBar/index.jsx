@@ -32,11 +32,12 @@ const Navbar = () => {
                 </div>
                 {/* web */}
                 <div className="web-nav">
+                    <h1>Ecoestilo</h1>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/recomendacoes">Parcerias</Link></li>
-                        <li><Link to="/agenda">Sobre nós</Link></li>
-                        <li><Link to="/galeria">Contatos</Link></li>
+                        <li><Link to="/"><span>Home</span></Link></li>
+                        <li><Link to="/parcerias"><span>Parcerias</span></Link></li>
+                        <li><Link to="/sobreNos"><span>Sobre nós</span></Link></li>
+                        <li><Link to="/contatos"><span>Contatos</span></Link></li>
                     </ul>
                 </div>
             </nav>
@@ -44,9 +45,9 @@ const Navbar = () => {
             <div className={menu_class}>
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/recomendacoes">Parcerias</Link></li>
-                    <li><Link to="/agenda">Sobre nós</Link></li>
-                    <li><Link to="/galeria">Contatos</Link></li>
+                    <li><Link to="/parcerias">Parcerias</Link></li>
+                    <li><Link to="/sobreNos">Sobre nós</Link></li>
+                    <li><Link to="/contatos">Contatos</Link></li>
                 </ul>
             </div>
         </div>

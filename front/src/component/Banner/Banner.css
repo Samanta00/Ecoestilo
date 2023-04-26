@@ -1,0 +1,8 @@
+.banner {
+  height: 500px;
+  width: 100%;
+  background-image: url("../../assets/img/imgGenerica.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-size: cover;
+}

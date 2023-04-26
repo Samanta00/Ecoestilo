@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './index.css';
-// assets
-import UserImg from '../../../assets/img/euu.jpeg';
 
 const ModalOptions = () => {
   const [OpenModal, setOpenModal] = useState(false);
