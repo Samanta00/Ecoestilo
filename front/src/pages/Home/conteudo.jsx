@@ -1,8 +1,9 @@
 import React from "react";
 import HomeContent from "../../component/HomeContent";
-import "./conteudo.css";
 
 import brandSprite from "../../assets/img/brands-sprite-green.png";
+
+import "./conteudo.css";
 
 function Conteudo() {
   const virarCarta = () => {
@@ -34,18 +35,6 @@ function Conteudo() {
       </div>
 
       <div className="bloco2">
-        {/* <h3 className="perguntaIntrodutoria">
-          O'que eu aprenderei com esse sistema de software?
-        </h3>
-
-        <div className="introducao">
-          <h4>
-            Com o Gold teeth health Você terá um gerenciador da Saúde contra o
-            cancer bucal, o sistema de software foi projetado para auxiliar de
-            uma forma divertida e educativa Pessoas que sofram ou não com a
-            doença{" "}
-          </h4>
-        </div> */}
 
         <div className="blocosenta"></div>
 

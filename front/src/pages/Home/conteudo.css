@@ -320,7 +320,7 @@ h4 {
   justify-content: center;
   letter-spacing: -.8px;
   line-height: 24px;
-  min-width: 140px;
+  min-width: 170px;
   outline: 0;
   padding: 0 17px;
   text-align: center;
@@ -347,9 +347,13 @@ h4 {
   fill: #ff5e00;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .buttonRight {
     min-width: 170px;
+  }
+
+  .rodapeMarcas {
+    display: none;
   }
 }
 
