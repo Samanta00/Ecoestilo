@@ -14,7 +14,6 @@ body {
   font-size: 3.1vw;
   color: rgb(255, 94, 0);
   font-weight: bold;
-
 }
 
 .divMae {
@@ -25,11 +24,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -0px -230px;
-  /* background-color: blueviolet; */
-  /* background-image: linear-gradient(to right,
-  white,
-  azure 
-  ); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +44,10 @@ body {
 
 .divMae h2, p {
   max-width: 465px;
+}
+
+.divMae h2 span {
+  color: #21a57e;
 }
 
 .divMae p span {
@@ -83,7 +81,6 @@ body {
   overflow: hidden;
   font-size: 0.90rem;
   color: blue;
-
 }
 
 .font {

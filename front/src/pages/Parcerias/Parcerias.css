@@ -1,0 +1,46 @@
+.objetivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 32px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.parceiro {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+
+.parceiro img {
+  width: 130px;
+  margin-right: 16px;
+}
+
+.Content {
+  position: relative;
+  top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Content .imgG {
+  width: 800px;
+}
+
+@media (max-width: 768px) {
+  .parceiro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parceiro img {
+    margin-bottom: 16px;
+  }
+}

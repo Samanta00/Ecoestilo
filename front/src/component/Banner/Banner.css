@@ -1,8 +1,7 @@
 .banner {
-  height: 500px;
+  height: 300px;
   width: 100%;
-  background-image: url("../../assets/img/imgGenerica.jpg");
-  background-repeat: no-repeat;
-  background-position: 0px;
-  background-size: cover;
+  background-color: #e6e7e2;
+  display: flex;
+  align-items: center;
 }
