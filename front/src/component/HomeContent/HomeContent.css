@@ -1,62 +1,61 @@
-.sidebarCardImg{
+.sidebarCardImg {
   /* CLASSE DA IMAGEM que fica no container do sidebar */
   width: 100%;
   border-radius: 10px;
 }
 
-.sidebarContent{
+.sidebarContent {
   /* MANIPULANDO O CONTAINER DA DIREITA */
- background-color: #383838;
- color: white;
- padding: 16px;
- display: flex;
- flex-direction: column;
- align-items: center;
- min-width: 300px;
- grid-area: sidebarContent;
- gap: 20px;
+  background-color: #383838;
+  color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  grid-area: sidebarContent;
+  gap: 20px;
 }
 
-.sidebarCard{
+.sidebarCard {
   /* CARD DO SIDER BAR (CONTAINER A DIREITA) */
- width: 75%;
- border: 1px solid transparent;
- border-radius: 10px;
- transition: 0.5s;
- cursor: pointer;
+  width: 75%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
 
 }
 
-.sidebarCard:hover{
+.sidebarCard:hover {
   border: 1px solid white;
 }
 
-.siderbarCardTitle{
+.siderbarCardTitle {
 
-   /* MANIPULANDO TITULO DO CARD A DIREITA */
+  /* MANIPULANDO TITULO DO CARD A DIREITA */
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 10px 0px;
 }
 
-@media(max-width: 630px){
-  .sidebarContent{
+@media(max-width: 630px) {
+  .sidebarContent {
     /* CONTAINER DA DIREITAS */
     min-width: auto;
   }
 }
 
 
-
-.mainCardImg{
+.mainCardImg {
   /* CLASSE DA IMAGEM, deve se usar largura em % e altura fixa, para não cobrir os elementos */
-  
+
   width: 100%;
   height: 280px;
   border-radius: 10px;
 }
 
-.categotyCard{
+.categotyCard {
   /* CLASSE REFETENTE A DIV ONDE A IMAGEM, TITULO E PARAGRAFO ESTÃO INSERIDOS */
   width: 380px;
   height: 480px;
@@ -66,50 +65,59 @@
   cursor: pointer;
   translate: 0.5S;
 }
-.categotyCard:hover{
- border: 2px solid black;
+
+.categotyCard:hover {
+  border: 2px solid black;
 }
 
-.mainContent{ /* CLASSE do container principal onde os cards estão inseridos */
-
-
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-gap: 10px;
-grid-area: mainContent;
+.mainContent {
+  /* CLASSE do container principal onde os cards estão inseridos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  grid-area: mainContent;
 }
 
-.mainCategoryCardTitle{
- /* DEFINIÇÕES DO TITULO DENTRO DA DIV CATEGORYCARD */
- font-family: Arial, Helvetica, sans-serif;
- padding: 6px;
+.mainCategoryCardTitle {
+  /* DEFINIÇÕES DO TITULO DENTRO DA DIV CATEGORYCARD */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
 }
 
-.mainCategoryCardDescription{
- /* DEFINIÇÕES DO TEXTO DENTRO DA DIV CATEGORYCARD */
- 
- padding: 6px;
+.mainCategoryCardDescription {
+  /* DEFINIÇÕES DO TEXTO DENTRO DA DIV CATEGORYCARD */
+
+  padding: 6px;
+}
+
+.gridContainer {
+  /* GRIDCONTAINER É O CONTAINER PRINCIPAL DO CODIGO */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* define os 3 frames da esquerda e mais 1 da direita */
+  grid-template-areas: "mainContent sidebarContent";
+  padding: 20px;
+  flex: 1 0 auto;
 }
 
 @media (max-width: 620px) {
-  .gridContainer{
+  .gridContainer {
     /* CONTAINER PRINCIPAL */
-   grid-template-areas: 
-   "mainContent"
-   "sidebarContent";
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 10px;
+    grid-template-areas:
+      "mainContent"
+      "sidebarContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-}
 
-.gridContainer{
-/* GRIDCONTAINER É O CONTAINER PRINCIPAL DO CODIGO */
-display: grid;
-grid-template-columns: 3fr 1fr; /* define os 3 frames da esquerda e mais 1 da direita */
-grid-template-areas: "mainContent sidebarContent";
-padding: 20px;
-flex: 1 0 auto;
+  .categotyCard {
+    padding: 32px;
+  }
+
+  .sidebarContent {
+    display: none;
+  }
 }

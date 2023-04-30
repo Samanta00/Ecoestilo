@@ -18,13 +18,12 @@ export default function SobreNos() {
         <div className="objetivo">
 
           <div className="sobreImagemDiretia">
-            <div>
+            <div className="conteudoSobre">
+              <h2>
+                Combatendo o descarte inadequado de tecidos de segunda mão: conheça a Ecoestilo
+              </h2>
               <p>
-                Greenpeace: O Greenpeace é uma organização internacional que atua
-                na defesa do meio ambiente e dos direitos humanos. Através de suas
-                campanhas e atividades, o Greenpeace tem sido um importante aliado
-                na luta contra o descarte inadequado de tecidos de segunda mão em
-                todo o mundo.
+                Nós da Ecoestilo somos uma iniciativa voltada para a promoção da sustentabilidade ambiental na indústria da moda. Nosso objetivo é combater o descarte inadequado de tecidos de segunda mão em todo o mundo, visando a preservação do meio ambiente e a redução do impacto negativo dessa indústria em nosso planeta.
               </p>
             </div>
             <img src={tecidoVerde} alt="" />
@@ -32,25 +31,19 @@ export default function SobreNos() {
 
           <div className="sobreImagemEsquerda">
             <img src={floresta} alt="" />
-            <div>
+            <div className="conteudoSobre">
+              <h2>O impacto negativo da indústria da moda no meio ambiente</h2>
               <p>
-                Greenpeace: O Greenpeace é uma organização internacional que atua
-                na defesa do meio ambiente e dos direitos humanos. Através de suas
-                campanhas e atividades, o Greenpeace tem sido um importante aliado
-                na luta contra o descarte inadequado de tecidos de segunda mão em
-                todo o mundo.
+                Acreditamos que é fundamental adotar medidas eficazes para enfrentar o crescente problema do descarte inadequado de roupas e tecidos usados, que resulta em uma grande quantidade de resíduos têxteis em aterros sanitários e em outras áreas inapropriadas. Ao detectar os países que realizam o maior volume de descarte inadequado de tecidos de segunda mão, podemos possibilitar a pronta identificação e recolhimento desses produtos antes que alcancem outros continentes.
               </p>
             </div>
           </div>
 
           <div className="sobreImagemDiretia">
-            <div>
+            <div className="conteudoSobre">
+              <h2>Identificando os países com o maior volume de descarte inadequado de tecidos: a missão da Ecoestilo</h2>
               <p>
-                Greenpeace: O Greenpeace é uma organização internacional que atua
-                na defesa do meio ambiente e dos direitos humanos. Através de suas
-                campanhas e atividades, o Greenpeace tem sido um importante aliado
-                na luta contra o descarte inadequado de tecidos de segunda mão em
-                todo o mundo.
+                A Ecoestilo foi fundada por um grupo de profissionais engajados e apaixonados pela moda e pelo meio ambiente, que perceberam a necessidade de buscar soluções inovadoras e sustentáveis para a indústria da moda. Acreditamos que, com a união de esforços, podemos transformar a indústria da moda em um setor mais ético, justo e ambientalmente responsável.
               </p>
             </div>
             <img src={paisagem} alt="" />

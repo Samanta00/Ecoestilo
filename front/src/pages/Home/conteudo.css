@@ -106,8 +106,10 @@ body {
 }
 
 .bloco2 {
-  margin: 1vw;
-  padding: 1vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
   overflow-y: hidden;
 }
 
@@ -276,6 +278,9 @@ h4 {
 }
 
 .rodapeMarcas {
+  width: 100%;
+  background-color: #FFF;
+  padding: 32px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -290,7 +295,7 @@ h4 {
 /* buttonRight */
 .buttonRight {
   align-items: center;
-  background-color: #fff;
+  background-color: #FFF;
   border: none;
   box-sizing: border-box;
   color: #000;
@@ -384,8 +389,49 @@ h4 {
   fill: #ff5e00;
 }
 
+.intro {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 20vw;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.intro h2 {
+  padding-bottom: 32px;
+  max-width: 650px;
+}
+
+.intro p {
+  max-width: 650px;
+}
+
+.intro img {
+  width: 600px;
+}
+
 @media (min-width: 768px) {
   .buttonLeft {
     min-width: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    margin: 0px;
+    flex-direction: column;
+    padding-top: 48px;
+  }
+
+  .introTextos {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .intro img {
+    align-self: center;
+    width: 300px;
   }
 }
