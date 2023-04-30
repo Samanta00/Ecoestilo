@@ -1,5 +1,3 @@
-// import UserLogin from "./component/User/login/login";
-
 import "./App.css";
 import { Routes } from "./routes/index";
 import React from "react";

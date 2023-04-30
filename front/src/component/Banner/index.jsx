@@ -1,9 +1,10 @@
+import React from 'react';
 import './Banner.css';
 
-export default function Banner() {
+export default function Banner(props) {
   return(
     <div className="banner">
-      <h1>Parcerias</h1>
+      <h1>{props.texto}</h1>
     </div>
   );
 }

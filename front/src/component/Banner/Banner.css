@@ -1,7 +1,12 @@
 .banner {
   height: 300px;
   width: 100%;
-  background-color: #e6e7e2;
+  /* background-color: #e6e7e2; */
+  background: rgb(33,165,126);
+  background: linear-gradient(323deg, rgba(33,165,126,1) 0%, rgba(230,231,226,1) 70%);
+  /* background: rgb(33,165,126);
+  background: linear-gradient(0deg, rgba(33,165,126,1) 0%, rgba(230,231,226,1) 70%); */
+  color: white;
   display: flex;
   align-items: center;
 }

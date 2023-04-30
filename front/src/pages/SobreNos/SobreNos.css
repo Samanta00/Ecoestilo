@@ -1,0 +1,61 @@
+.objetivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  margin-top: 32px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.sobreImagemDiretia {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.sobreImagemDiretia img {
+  width: 400px;
+  padding-left: 32px;
+}
+
+.sobreImagemEsquerda {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.sobreImagemEsquerda img {
+  width: 400px;
+  padding-right: 32px;
+}
+
+.Content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.Content .imgG {
+  width: 800px;
+}
+
+@media (max-width: 768px) {
+  .parsobrePrimeiro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobrePrimeiro img {
+    margin-bottom: 16px;
+  }
+}
