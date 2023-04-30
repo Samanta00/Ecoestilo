@@ -88,10 +88,6 @@ body {
   height: 2vw;
 }
 
-.perguntaIntrodutoria {
-  text-align: center;
-}
-
 .comentario {
   max-width: 690vw;
   padding: 1rem;
@@ -212,21 +208,8 @@ h4 {
   margin: auto;
 }
 
-.colunao {
-  margin: 10vw;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 575.98px) {
-  .colunao {
-    flex-direction: column;
-  }
-  .coluna1 {
-    margin-bottom: 5rem;
-  }
 
   .divMae {
     background-position: -200px;

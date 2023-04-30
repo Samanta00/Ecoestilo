@@ -3,6 +3,7 @@ import Conteudo from './conteudo';
 
 import Navbar from '../../component/NavBar';
 import Banner from '../../component/Banner';
+import Footer from '../../component/Footer';
 
 function Parcerias() {
   return (
@@ -10,6 +11,7 @@ function Parcerias() {
       <Navbar />
       <Banner texto="Parcerias" />
       <Conteudo />
+      <Footer />
     </>
 
   )

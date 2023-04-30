@@ -6,6 +6,7 @@ import paisagem from "../../assets/img/paisagem.jpg";
 
 import "./SobreNos.css";
 import Banner from "../../component/Banner";
+import Footer from "../../component/Footer";
 
 export default function SobreNos() {
   return (
@@ -57,6 +58,8 @@ export default function SobreNos() {
 
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
