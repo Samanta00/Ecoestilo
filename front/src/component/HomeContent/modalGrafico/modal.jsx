@@ -8,6 +8,7 @@ export const contextoGrafico=()=>{
 <>
   <Navbar />
   <Grafico/>
+  <h1>OLá Prazrr</h1>
   <Footer />
 </>
 

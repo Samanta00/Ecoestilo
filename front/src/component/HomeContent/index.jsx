@@ -1,7 +1,7 @@
 import img from './assets/tenis.jpg';
 import './HomeContent.css';
 import { Grafico } from './grafico/grafico';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -73,8 +73,11 @@ export default function HomeContent() {
       <div className="sidebarContent">
         <p>CATEGORIAS EXTRAS</p>
 
-        <div className="sidebarCard" >
-          <Grafico/>
+        <div className="sidebarCard" >   
+          <ul>
+          <li><Link to="/Pesquisa"><span><Grafico/></span></Link></li>
+          </ul>
+          
         </div>
 
 
