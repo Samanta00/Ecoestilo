@@ -1,7 +1,20 @@
 import img from './assets/tenis.jpg';
 import './HomeContent.css';
+import { Grafico } from './grafico/grafico';
+
+
+
+
+
+const Stack=createStackNavigator();
 
 export default function HomeContent() {
+
+ const teste=()=>{
+        <Link to="/Pesquisa" />
+      }
+
+
   return (
     <div className="gridContainer">
       <div className="mainContent">
@@ -61,13 +74,16 @@ export default function HomeContent() {
         </div>
       </div>
 
+
+
       <div className="sidebarContent">
         <p>CATEGORIAS EXTRAS</p>
 
-        <div className="sidebarCard">
-          <img src={img} alt="" className="sidebarCardImg" />
-          <p className="siderbarCardTitle">BICICLETAS</p>
+        <div className="sidebarCard" onClick={teste}>
+          <Grafico/>
         </div>
+
+
         <div className="sidebarCard">
           <img src={img} alt="" className="sidebarCardImg" />
           <p className="siderbarCardTitle">ESPORTES DE FRIO</p>

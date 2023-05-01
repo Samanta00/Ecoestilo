@@ -23,7 +23,7 @@ export default function SobreNos() {
                 Combatendo o descarte inadequado de tecidos de segunda mão: conheça a Ecoestilo
               </h2>
               <p>
-                Nós da Ecoestilo somos uma iniciativa voltada para a promoção da sustentabilidade ambiental na indústria da moda. Nosso objetivo é combater o descarte inadequado de tecidos de segunda mão em todo o mundo, visando a preservação do meio ambiente e a redução do impacto negativo dessa indústria em nosso planeta.
+                A Ecoestilo é uma iniciativa voltada para a promoção da sustentabilidade ambiental na indústria da moda. Nosso objetivo é combater o descarte inadequado de tecidos de segunda mão em todo o mundo, visando a preservação do meio ambiente e a redução do impacto negativo dessa indústria em nosso planeta.
               </p>
             </div>
             <img src={tecidoVerde} alt="" />
