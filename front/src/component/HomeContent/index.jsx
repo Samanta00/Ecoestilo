@@ -5,14 +5,8 @@ import { Grafico } from './grafico/grafico';
 
 
 
-
-const Stack=createStackNavigator();
-
 export default function HomeContent() {
 
- const teste=()=>{
-        <Link to="/Pesquisa" />
-      }
 
 
   return (
@@ -79,7 +73,7 @@ export default function HomeContent() {
       <div className="sidebarContent">
         <p>CATEGORIAS EXTRAS</p>
 
-        <div className="sidebarCard" onClick={teste}>
+        <div className="sidebarCard" >
           <Grafico/>
         </div>
 
