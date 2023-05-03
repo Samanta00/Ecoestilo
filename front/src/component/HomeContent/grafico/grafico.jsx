@@ -2,23 +2,7 @@ import React, {useEffect, useState} from "react";
 import { Chart } from "react-google-charts";
 import _ from 'lodash';
 
-const options = {
-  title: "Age vs. Weight comparison",
-  hAxis: { title: "Age", viewWindow: { min: 0, max: 15 } },
-  vAxis: { title: "Weight", viewWindow: { min: 0, max: 15 } },
-  legend: "none"
-};
 
-
-const data = [
-  ["Age", "Weight"],
-  ["assistindo lucas neto", 12],
-  ["assistindo youtube", 5.5],
-  ["assistindo tarzam", 14],
-  ["assistindo dora", 5],
-  ["assistindo joanita", 3.5],
-  ["assistindo peppa pig", 7]
-];
 
 export const Grafico=()=>{
     const [países, setPaíses] = useState([]);
@@ -31,7 +15,7 @@ export const Grafico=()=>{
 
         const mapeandoPaises=_.map(values, (value,key)=>
             [key,
-            _.sumBy(values[key], (v)=> v.ano)
+            _.sumBy(values[key], (v)=> v.taxaImportacao)
             ])
          console.log(mapeandoPaises)
          return [["fabricante", "venda"], ...mapeandoPaises]
@@ -42,21 +26,41 @@ export const Grafico=()=>{
     useEffect(() => {
         const paísesdoGrafico=[   
                {
-                Pais:"costa do marfim",
-                ano:2015, 
+                Pais:"Costa do Marfim",
+                taxaImportacao:128700, 
                },
                {
                 Pais:"Gana",
-                ano:2014, 
+                taxaImportacao:181000000
                },
                {
                 Pais:"Nigéria",
-                ano:2010, 
+                taxaImportacao:123000000
                },
                {
-                Pais:"Ucránia",
-                ano:2018, 
+                Pais:"Tanzânia",
+                taxaImportacao:102000000
                },
+               {
+                Pais:"Quênia",
+                taxaImportacao:122000000
+               },
+               {
+                Pais:"Uganda",
+                taxaImportacao:110700000
+               },
+               {
+                Pais:"Argélia",
+                taxaImportacao:124000000
+               },
+               {
+                Pais:"Ucrânia",
+                taxaImportacao:154000000
+               },
+               {
+               Pais:"Mali",
+               taxaImportacao: 141000
+              },
           ];
          setPaíses(loadData(paísesdoGrafico))
       },[]);
@@ -74,6 +78,31 @@ export const Grafico=()=>{
             height="400px"
             legendToggle
             />
+
+            <div>
+              <h2>Países que sofrem com a poluição Têxtil</h2>
+              <h3>De acordo com o gráfico listado, esses são os países que mais sofrem com a poluição têxtil, são lugares de 
+                baixo índice de desenvolvimento, onde a desigualdade social é enorme
+              </h3>
+
+
+              
+                <h3>Empresas Fest Fashion</h3>
+               <table>
+                <tr border='1'>
+                  <th>Empresas Fast Fashion</th>
+                  <td>Shein</td>
+                  <td>Lacoste</td>
+                  <td>Zara</td>
+                  <td>Polo</td>
+                  <td>Diesel</td>
+                  <td>Bershka</td>
+                  <td>Splash</td>
+                  <td>C&A</td>
+                  <td>Adidas</td>
+                </tr>
+               </table>
+            </div>
     </div>      
     )
 
