@@ -1,0 +1,39 @@
+table{
+    border-style: hidden;
+    margin: auto;
+}
+tr{
+    background-color: aqua;
+}
+
+.divPai{
+    text-align: center;
+}
+
+
+.container{
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    width: 57vw;
+    margin-right: 21vw;
+    
+}
+.introducaoPaises{
+    display: flex;
+    width: 42vw;
+    height: 4vw;
+    margin-top: -13vw;
+    padding: 2vw;
+    margin-left: 46vw;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.container2{
+    margin-top: 16vw;
+}
+h1{
+    font-weight: 0.5vw;
+    align-items: center;
+    
+}

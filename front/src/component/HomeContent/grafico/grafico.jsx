@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from "react";
 import { Chart } from "react-google-charts";
 import _ from 'lodash';
-
+import "./style/grafico.css"
 
 
 export const Grafico=()=>{
     const [países, setPaíses] = useState([]);
+    const [paisesPrejudiciais, setPaisesPrejudiciais]=useState([])
 
     const loadData=(data)=>{
         const values=_.groupBy(data,(value)=>
@@ -18,7 +19,7 @@ export const Grafico=()=>{
             _.sumBy(values[key], (v)=> v.taxaImportacao)
             ])
          console.log(mapeandoPaises)
-         return [["fabricante", "venda"], ...mapeandoPaises]
+         return [["Países", "importação"], ...mapeandoPaises]
     }
 
     
@@ -66,43 +67,139 @@ export const Grafico=()=>{
       },[]);
 
 
+      const loadPaisesPrejudicadores=(data)=>{
+        const values=_.groupBy(data,(value)=>
+            value.Pais)
+
+        console.log("values", values)
+
+        const mapeandoPaises=_.map(values, (value,key)=>
+            [key,
+            _.sumBy(values[key], (v)=> v.descarte)
+            ])
+         console.log(mapeandoPaises)
+         return [["Países Prejudiciais", "Taxa de Descarte"], ...mapeandoPaises]
+    }
+
+    
+
+    useEffect(() => {
+        const paisesPrejudiciais=[   
+               {
+                Pais:"E.U.A",
+                descarte:580500000, 
+               },
+               {
+                Pais:"Espanha",
+                descarte:22480000,
+               },
+               {
+                Pais:"Índia",
+                descarte:170800000,
+               },
+               {
+                Pais:"Países do Golfo",
+                descarte:447900000,
+               },
+               {
+                Pais:"China",
+                descarte:360600000,
+               },
+               {
+                Pais:"Reino Unido",
+                descarte:272800000,
+               },
+               {
+                Pais:"Alemanha",
+                descarte:258800000,
+               },
+               {
+                Pais:"Austrália",
+                descarte:150000
+               },
+               {
+               Pais:"Coreia do Sul ",
+               descarte: 256800000
+              },
+          ];
+          setPaisesPrejudiciais(loadPaisesPrejudicadores(paisesPrejudiciais))
+      },[]);
+
+
 
     return(
-      <div>
-        <h1>Gráficos</h1>
-            <Chart
-            chartType="PieChart"
-            data={países}
-            // options={options}
-            width="80%"
-            height="400px"
-            legendToggle
-            />
+      <div className="divPai">
+          <h1>Países que sofrem com a poluição Têxtil</h1> 
 
-            <div>
-              <h2>Países que sofrem com a poluição Têxtil</h2>
-              <h3>De acordo com o gráfico listado, esses são os países que mais sofrem com a poluição têxtil, são lugares de 
-                baixo índice de desenvolvimento, onde a desigualdade social é enorme
-              </h3>
+        <div className="container">
+                
+                  <Chart
+                  chartType="PieChart"
+                  data={países}
+                  // options={options}
+                  width="80%"
+                  height="400px"
+                  legendToggle
+                  />
+          </div>  
+                <div className="introducaoPaises">
+                    <h3>De acordo com o gráfico listado, esses são os países que mais sofrem com a poluição têxtil, são lugares de 
+                      baixo índice de desenvolvimento onde a desigualdade social é enorme e com isso ganham desvantagem ao fast fashion.
+                      empresas dos Países do Golfo(Países ricos em Dubai)  transportam roupas de segunda mão fazem as classificações de
+                       roupas em 4 níveis entre roupas de marcas, roupas com tecido fraco, roupas comuns e roupas vintage, para mercadores
+                        que paguem por mais dinheiro alguns funcionários retiram peças boas e vendem por fora da empresa(obs:  Roupas caras nunca vão parar
+                         na áfrica, eles acabam ficando em países ricos), para mercadores que pagam em igualmente a empresa misturam todos os tipos de roupas
+                        em embalagens com 40 kg de roupas, 
+                    </h3>                
+                </div>
+       
 
+          <div className="container2">    
+              <h3>Empresas Fest Fashion</h3>
+                    <table>
+                      <tr border='1'>
+                        <th>Empresas Fast Fashion</th>
+                      </tr> 
 
-              
-                <h3>Empresas Fest Fashion</h3>
-               <table>
-                <tr border='1'>
-                  <th>Empresas Fast Fashion</th>
-                  <td>Shein</td>
-                  <td>Lacoste</td>
-                  <td>Zara</td>
-                  <td>Polo</td>
-                  <td>Diesel</td>
-                  <td>Bershka</td>
-                  <td>Splash</td>
-                  <td>C&A</td>
-                  <td>Adidas</td>
-                </tr>
-               </table>
+                      <tr>
+                        <td>Shein</td>
+                      </tr>  
+                      <tr>
+                        <td>Lacoste</td>
+                      </tr>
+                      <tr>
+                        <td>Zara</td>
+                      </tr>
+                      <tr>
+                        <td>Polo</td>
+                      </tr>
+                      <tr>
+                        <td>Diesel</td>
+                      </tr>
+                      <tr>
+                        <td>Bershka</td>
+                      </tr>
+                      <tr>
+                        <td>Splash</td>
+                      </tr>
+                      <tr>
+                        <td>C&A</td>
+                      </tr>
+                      <tr>
+                        <td>Adidas</td> 
+                      </tr>   
+                    </table>
             </div>
+              <Chart
+              chartType="PieChart"
+              data={paisesPrejudiciais}
+              // options={options}
+              width="80%"
+              height="400px"
+              legendToggle
+              />
+              <h3>índices do gráfico mostram quais são os países mais causadores de dados</h3>
+           
     </div>      
     )
 
