@@ -8,6 +8,8 @@ tr{
 
 .divPai{
     text-align: center;
+    border: 1cm;
+    padding: 10px 25px;
 }
 
 
@@ -23,7 +25,7 @@ tr{
     display: flex;
     width: 42vw;
     height: 4vw;
-    margin-top: -13vw;
+    margin-top: -15vw;
     padding: 2vw;
     margin-left: 46vw;
     align-items: center;
@@ -31,9 +33,23 @@ tr{
 }
 .container2{
     margin-top: 16vw;
+    text-align: center;
 }
 h1{
     font-weight: 0.5vw;
     align-items: center;
     
+}
+.imagem{
+    width: 30vw;
+    height: 20vw;
+    padding: 10px 25px;
+}
+h4{
+    width: 32vw;
+    height: 4vw;
+    align-items: center;
+}
+h3{
+    margin-top: 4vw;
 }
