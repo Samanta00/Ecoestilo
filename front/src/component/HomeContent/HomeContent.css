@@ -24,7 +24,8 @@
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
-
+  text-decoration: none;
+  color: #FFF;
 }
 
 .sidebarCard:hover {
@@ -64,6 +65,8 @@
   transition: 0.5s;
   cursor: pointer;
   translate: 0.5S;
+  text-decoration: none;
+  color: #000;
 }
 
 .categotyCard:hover {

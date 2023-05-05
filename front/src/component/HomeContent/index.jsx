@@ -12,7 +12,7 @@ export default function HomeContent() {
   return (
     <div className="gridContainer">
       <div className="mainContent">
-        <div className="categotyCard">
+        <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">BOXE</p>
           <p className="mainCategoryCardDescription">
@@ -20,8 +20,8 @@ export default function HomeContent() {
             voluptate tempore reiciendis eius iusto debitis accusantium ipsam
             consequatur ullam quod!
           </p>
-        </div>
-        <div className="categotyCard">
+        </Link>
+        <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">BOXE</p>
           <p className="mainCategoryCardDescription">
@@ -29,8 +29,8 @@ export default function HomeContent() {
             voluptate tempore reiciendis eius iusto debitis accusantium ipsam
             consequatur ullam quod!
           </p>
-        </div>
-        <div className="categotyCard">
+        </Link>
+        <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">BOXE</p>
           <p className="mainCategoryCardDescription">
@@ -38,8 +38,8 @@ export default function HomeContent() {
             voluptate tempore reiciendis eius iusto debitis accusantium ipsam
             consequatur ullam quod!
           </p>
-        </div>
-        <div className="categotyCard">
+        </Link>
+        <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">BOXE</p>
           <p className="mainCategoryCardDescription">
@@ -47,8 +47,8 @@ export default function HomeContent() {
             voluptate tempore reiciendis eius iusto debitis accusantium ipsam
             consequatur ullam quod!
           </p>
-        </div>
-        <div className="categotyCard">
+        </Link>
+        <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">BOXE</p>
           <p className="mainCategoryCardDescription">
@@ -56,8 +56,8 @@ export default function HomeContent() {
             voluptate tempore reiciendis eius iusto debitis accusantium ipsam
             consequatur ullam quod!
           </p>
-        </div>
-        <div className="categotyCard">
+        </Link>
+        <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">BOXE</p>
           <p className="mainCategoryCardDescription">
@@ -65,7 +65,7 @@ export default function HomeContent() {
             voluptate tempore reiciendis eius iusto debitis accusantium ipsam
             consequatur ullam quod!
           </p>
-        </div>
+        </Link>
       </div>
 
 
@@ -73,30 +73,26 @@ export default function HomeContent() {
       <div className="sidebarContent">
         <p>CATEGORIAS EXTRAS</p>
 
-        <div className="sidebarCard" >   
-          <ul>
-          <li><Link to="/Pesquisa"><span><Grafico/></span></Link></li>
-          </ul>
-          
-        </div>
-
-
-        <div className="sidebarCard">
+        <Link className="sidebarCard" to="/Pesquisa">
           <img src={img} alt="" className="sidebarCardImg" />
           <p className="siderbarCardTitle">ESPORTES DE FRIO</p>
-        </div>
-        <div className="sidebarCard">
+        </Link>
+        <Link className="sidebarCard" to="/Pesquisa">
+          <img src={img} alt="" className="sidebarCardImg" />
+          <p className="siderbarCardTitle">ESPORTES DE FRIO</p>
+        </Link>
+        <Link className="sidebarCard" to="/Pesquisa">
           <img src={img} alt="" className="sidebarCardImg" />
           <p className="siderbarCardTitle">FUTEBOL AMERICANO</p>
-        </div>
-        <div className="sidebarCard">
+        </Link>
+        <Link className="sidebarCard" to="/Pesquisa">
           <img src={img} alt="" className="sidebarCardImg" />
           <p className="siderbarCardTitle">SKATE</p>
-        </div>
-        <div className="sidebarCard">
+        </Link>
+        <Link className="sidebarCard" to="/Pesquisa">
           <img src={img} alt="" className="sidebarCardImg" />
           <p className="siderbarCardTitle">YOGA</p>
-        </div>
+        </Link>
       </div>
     </div>
   );
