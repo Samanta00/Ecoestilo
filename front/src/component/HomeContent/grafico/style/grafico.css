@@ -1,55 +1,87 @@
-table{
+table {
     border-style: hidden;
     margin: auto;
 }
-tr{
+
+tr {
     background-color: aqua;
 }
 
-.divPai{
-    text-align: center;
+.divPai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 900px;
+    padding-top: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
     border: 1cm;
     padding: 10px 25px;
+    gap: 20px;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
-.container{
-    display: inline-block;
+.primeiroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fastfashion {
+    width: 100%;
+    height: 250px;
+}
+
+.graficoContainer {
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 57vw;
-    margin-right: 21vw;
-    
 }
-.introducaoPaises{
+
+.tabelaContainer {
+    margin-top: 2em;
+}
+.tabelaContainer table {
+    margin-top: 1em;
+}
+
+
+.introducaoPaises {
     display: flex;
-    width: 42vw;
-    height: 4vw;
-    margin-top: -15vw;
-    padding: 2vw;
-    margin-left: 46vw;
     align-items: center;
-    margin-bottom: 30px;
 }
-.container2{
-    margin-top: 16vw;
+
+.container2 {
+    margin-top: 1em;
     text-align: center;
 }
-h1{
+
+h1 {
     font-weight: 0.5vw;
     align-items: center;
-    
 }
-.imagem{
-    width: 30vw;
-    height: 20vw;
+
+.imagem {
+    width: 100%;
+    /* height: 20vw; */
     padding: 10px 25px;
 }
-h4{
+
+h4 {
     width: 32vw;
     height: 4vw;
     align-items: center;
 }
-h3{
-    margin-top: 4vw;
+
+h3 {
+    margin-top: 2em;
 }

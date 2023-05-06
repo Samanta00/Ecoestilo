@@ -119,106 +119,103 @@ export const Grafico = () => {
   }, []);
 
   return (
-    <div className="divPai">
-      <h1>Países que sofrem com a poluição Têxtil</h1>
-      <hr />
-      <div className="container">
+    <div className="container">
+      <div className="divPai">
+        <h1>Países que sofrem com a poluição Têxtil</h1>
+        <div className="graficoContainer">
+          <Chart
+            chartType="PieChart"
+            data={países}
+            width="600px"
+            height="400px"
+            legendToggle
+            className="grafico"
+          />
+        </div>
+        <div className="introducaoPaises">
+          <h3>
+            De acordo com o gráfico listado, esses são os países que mais sofrem
+            com a poluição têxtil, são lugares de baixo índice de desenvolvimento
+            onde a desigualdade social é enorme e com isso ganham desvantagem ao
+            fast fashion. empresas dos Países do Golfo(Países ricos em Dubai)
+            transportam roupas de segunda mão fazem as classificações de roupas em
+            4 níveis entre roupas de marcas, roupas com tecido fraco, roupas
+            comuns e roupas vintage, para mercadores que paguem por mais dinheiro
+            alguns funcionários retiram peças boas e vendem por fora da
+            empresa(obs: Roupas caras nunca vão parar na áfrica, eles acabam
+            ficando em países ricos), para mercadores que pagam em igualmente a
+            empresa misturam todos os tipos de roupas em embalagens com 40 kg de
+            roupas.
+          </h3>
+        </div>
+        <div className="container2">
+          <h2>
+            Agora que você já sabe onde vão parar suas roupas, você já parou para
+            pensar quais são as empresas mundialmente causadoras do Fast Fashion
+            que ocasionalmente resultam em poluição têxtil?{" "}
+          </h2>
+          <div>
+            <img className="imagem" src={fasFasion}></img>
+          </div>
+          <div className="fastfashion">
+            <h4>
+              Logo a baixo foram listadas algumas marcas mundialmente conhecidas
+              mas antes de exibi-las é importante ressaltar que empresas de roupas
+              tendem a se inovar no mercado comercial, dessa forma a expansão de
+              compras tendem a aumentar e com isso peças antigas sempre irão parar
+              em lixos, onde a coleta armazena e vende para fornecedores que fazem
+              a distribuição para o continente africanos(onde roupas mais frágeis
+              são revendidas) e costa do marfim(onde roupas com melhores tecidos
+              são revendidos)
+            </h4>
+          </div>
+          <div className="tabelaContainer">
+            <table>
+              <tr border="1">
+                <th>Empresas Fast Fashion</th>
+              </tr>
+              <tr>
+                <td>Shein</td>
+              </tr>
+              <tr>
+                <td>Lacoste</td>
+              </tr>
+              <tr>
+                <td>Zara</td>
+              </tr>
+              <tr>
+                <td>Polo</td>
+              </tr>
+              <tr>
+                <td>Diesel</td>
+              </tr>
+              <tr>
+                <td>Bershka</td>
+              </tr>
+              <tr>
+                <td>Splash</td>
+              </tr>
+              <tr>
+                <td>C&A</td>
+              </tr>
+              <tr>
+                <td>Adidas</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h3>
+          índices do gráfico mostram quais são os países mais causadores de dados
+        </h3>
         <Chart
           chartType="PieChart"
-          data={países}
+          data={paisesPrejudiciais}
           // options={options}
           width="80%"
           height="400px"
           legendToggle
         />
       </div>
-      <hr />
-      <div className="introducaoPaises">
-        <h3>
-          De acordo com o gráfico listado, esses são os países que mais sofrem
-          com a poluição têxtil, são lugares de baixo índice de desenvolvimento
-          onde a desigualdade social é enorme e com isso ganham desvantagem ao
-          fast fashion. empresas dos Países do Golfo(Países ricos em Dubai)
-          transportam roupas de segunda mão fazem as classificações de roupas em
-          4 níveis entre roupas de marcas, roupas com tecido fraco, roupas
-          comuns e roupas vintage, para mercadores que paguem por mais dinheiro
-          alguns funcionários retiram peças boas e vendem por fora da
-          empresa(obs: Roupas caras nunca vão parar na áfrica, eles acabam
-          ficando em países ricos), para mercadores que pagam em igualmente a
-          empresa misturam todos os tipos de roupas em embalagens com 40 kg de
-          roupas.
-        </h3>
-      </div>
-
-      <div className="container2">
-        <h2>
-          Agora que você já sabe onde vão parar suas roupas, você já parou para
-          pensar quais são as empresas mundialmente causadoras do Fast Fashion
-          que ocasionalmente resultam em poluição têxtil?{" "}
-        </h2>
-        <div>
-          <img className="imagem" src={fasFasion}></img>
-        </div>
-
-        <div>
-          <h4>
-            Logo a baixo foram listadas algumas marcas mundialmente conhecidas
-            mas antes de exibi-las é importante ressaltar que empresas de roupas
-            tendem a se inovar no mercado comercial, dessa forma a expansão de
-            compras tendem a aumentar e com isso peças antigas sempre irão parar
-            em lixos, onde a coleta armazena e vende para fornecedores que fazem
-            a distribuição para o continente africanos(onde roupas mais frágeis
-            são revendidas) e costa do marfim(onde roupas com melhores tecidos
-            são revendidos)
-          </h4>
-        </div>
-
-        <h3>Empresas Fest Fashion</h3>
-        <table>
-          <tr border="1">
-            <th>Empresas Fast Fashion</th>
-          </tr>
-
-          <tr>
-            <td>Shein</td>
-          </tr>
-          <tr>
-            <td>Lacoste</td>
-          </tr>
-          <tr>
-            <td>Zara</td>
-          </tr>
-          <tr>
-            <td>Polo</td>
-          </tr>
-          <tr>
-            <td>Diesel</td>
-          </tr>
-          <tr>
-            <td>Bershka</td>
-          </tr>
-          <tr>
-            <td>Splash</td>
-          </tr>
-          <tr>
-            <td>C&A</td>
-          </tr>
-          <tr>
-            <td>Adidas</td>
-          </tr>
-        </table>
-      </div>
-      <Chart
-        chartType="PieChart"
-        data={paisesPrejudiciais}
-        // options={options}
-        width="80%"
-        height="400px"
-        legendToggle
-      />
-      <h3>
-        índices do gráfico mostram quais são os países mais causadores de dados
-      </h3>
     </div>
   );
 };
