@@ -1,6 +1,7 @@
 import img from './assets/lixao.png';
 import './HomeContent.css';
-import { Grafico } from './grafico/grafico';
+import grafico from './assets/grafico.png';
+import tecido from './assets/tecido.png';
 import { Link } from 'react-router-dom';
 
 
@@ -13,57 +14,17 @@ export default function HomeContent() {
     <div className="gridContainer">
       <div className="mainContent">
         <Link className="categotyCard" to="/Pesquisa">
-          <img src={img} alt="mainCardImg" className="mainCardImg" />
-          <p className="mainCategoryCardTitle">PESQUISA</p>
+          <img src={tecido} alt="mainCardImg" className="mainCardImg" />
+          <p className="mainCategoryCardTitle">Saiba mais</p>
           <p className="mainCategoryCardDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptate tempore reiciendis eius iusto debitis accusantium ipsam
-            consequatur ullam quod!
+          Saiba como o tecido têxtil pode ser reaproveitado
           </p>
         </Link>
         <Link className="categotyCard" to="/Pesquisa">
           <img src={img} alt="mainCardImg" className="mainCardImg" />
           <p className="mainCategoryCardTitle">PESQUISA</p>
           <p className="mainCategoryCardDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptate tempore reiciendis eius iusto debitis accusantium ipsam
-            consequatur ullam quod!
-          </p>
-        </Link>
-        <Link className="categotyCard" to="/Pesquisa">
-          <img src={img} alt="mainCardImg" className="mainCardImg" />
-          <p className="mainCategoryCardTitle">PESQUISA</p>
-          <p className="mainCategoryCardDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptate tempore reiciendis eius iusto debitis accusantium ipsam
-            consequatur ullam quod!
-          </p>
-        </Link>
-        <Link className="categotyCard" to="/Pesquisa">
-          <img src={img} alt="mainCardImg" className="mainCardImg" />
-          <p className="mainCategoryCardTitle">PESQUISA</p>
-          <p className="mainCategoryCardDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptate tempore reiciendis eius iusto debitis accusantium ipsam
-            consequatur ullam quod!
-          </p>
-        </Link>
-        <Link className="categotyCard" to="/Pesquisa">
-          <img src={img} alt="mainCardImg" className="mainCardImg" />
-          <p className="mainCategoryCardTitle">PESQUISA</p>
-          <p className="mainCategoryCardDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptate tempore reiciendis eius iusto debitis accusantium ipsam
-            consequatur ullam quod!
-          </p>
-        </Link>
-        <Link className="categotyCard" to="/Pesquisa">
-          <img src={img} alt="mainCardImg" className="mainCardImg" />
-          <p className="mainCategoryCardTitle">PESQUISA</p>
-          <p className="mainCategoryCardDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-            voluptate tempore reiciendis eius iusto debitis accusantium ipsam
-            consequatur ullam quod!
+          Pesquisa de satisfação sobre o assunto abordado
           </p>
         </Link>
       </div>
@@ -74,24 +35,8 @@ export default function HomeContent() {
         <p>CATEGORIAS EXTRAS</p>
 
         <Link className="sidebarCard" to="/Pesquisa">
-          <img src={img} alt="" className="sidebarCardImg" />
-          <p className="siderbarCardTitle">CONTEUDO EXTRA</p>
-        </Link>
-        <Link className="sidebarCard" to="/Pesquisa">
-          <img src={img} alt="" className="sidebarCardImg" />
-          <p className="siderbarCardTitle">CONTEUDO EXTRA</p>
-        </Link>
-        <Link className="sidebarCard" to="/Pesquisa">
-          <img src={img} alt="" className="sidebarCardImg" />
-          <p className="siderbarCardTitle">CONTEUDO EXTRA</p>
-        </Link>
-        <Link className="sidebarCard" to="/Pesquisa">
-          <img src={img} alt="" className="sidebarCardImg" />
-          <p className="siderbarCardTitle">CONTEUDO EXTRA</p>
-        </Link>
-        <Link className="sidebarCard" to="/Pesquisa">
-          <img src={img} alt="" className="sidebarCardImg" />
-          <p className="siderbarCardTitle">CONTEUDO EXTRA</p>
+          <img src={grafico} alt="" className="sidebarCardImg" />
+          <p className="siderbarCardTitle">Visualização de Dados têxtil</p>
         </Link>
       </div>
     </div>
