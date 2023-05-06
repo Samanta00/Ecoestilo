@@ -36,11 +36,6 @@ tr {
     justify-content: center;
 }
 
-.fastfashion {
-    width: 100%;
-    height: 250px;
-}
-
 .graficoContainer {
     display: flex;
     justify-content: center;
@@ -68,20 +63,21 @@ tr {
 h1 {
     font-weight: 0.5vw;
     align-items: center;
+    font-size: 3.20vw;
 }
-
+h2{
+    font-weight: 0.5vw;
+    align-items: center;
+    font-size: 1.20vw;
+}
 .imagem {
     width: 100%;
     /* height: 20vw; */
     padding: 10px 25px;
 }
 
-h4 {
-    width: 32vw;
-    height: 4vw;
-    align-items: center;
-}
 
-h3 {
-    margin-top: 2em;
+p {
+    font-size: clamp(0.52em, 0.70em + 0.52vw, 0.75em);
+
 }

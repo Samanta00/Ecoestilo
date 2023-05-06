@@ -122,6 +122,7 @@ export const Grafico = () => {
     <div className="container">
       <div className="divPai">
         <h1>Países que sofrem com a poluição Têxtil</h1>
+        
         <div className="graficoContainer">
           <Chart
             chartType="PieChart"
@@ -133,7 +134,7 @@ export const Grafico = () => {
           />
         </div>
         <div className="introducaoPaises">
-          <h3>
+          <p>
             De acordo com o gráfico listado, esses são os países que mais sofrem
             com a poluição têxtil, são lugares de baixo índice de desenvolvimento
             onde a desigualdade social é enorme e com isso ganham desvantagem ao
@@ -146,7 +147,7 @@ export const Grafico = () => {
             ficando em países ricos), para mercadores que pagam em igualmente a
             empresa misturam todos os tipos de roupas em embalagens com 40 kg de
             roupas.
-          </h3>
+          </p>
         </div>
         <div className="container2">
           <h2>
@@ -157,8 +158,8 @@ export const Grafico = () => {
           <div>
             <img className="imagem" src={fasFasion}></img>
           </div>
-          <div className="fastfashion">
-            <h4>
+          <div className="introducaoPaises">
+            <p>
               Logo a baixo foram listadas algumas marcas mundialmente conhecidas
               mas antes de exibi-las é importante ressaltar que empresas de roupas
               tendem a se inovar no mercado comercial, dessa forma a expansão de
@@ -167,7 +168,7 @@ export const Grafico = () => {
               a distribuição para o continente africanos(onde roupas mais frágeis
               são revendidas) e costa do marfim(onde roupas com melhores tecidos
               são revendidos)
-            </h4>
+            </p>
           </div>
           <div className="tabelaContainer">
             <table>
@@ -204,9 +205,9 @@ export const Grafico = () => {
             </table>
           </div>
         </div>
-        <h3>
-          índices do gráfico mostram quais são os países mais causadores de dados
-        </h3>
+        <h2>
+          índices do gráfico mostram quais são os países mais causadores de Poluição Têxtil
+        </h2>
         <Chart
           chartType="PieChart"
           data={paisesPrejudiciais}
@@ -215,6 +216,11 @@ export const Grafico = () => {
           height="400px"
           legendToggle
         />
+        <p>Os Países de grande desenvolvimento geralmente são os maiores causadores de poluição têxtil e isso tudo
+          por conta de industrias multinacionais que estão alocadas nessas regiões, dessa forma o mercado
+          da moda cria novas tendencias de criações para o público alvo que geralmente são digitais influêncers e com isso
+          outros publicos são influenciados surgindo desde então o maior causados de poluição têxtil o famoso Fast Fahion.  
+        </p>
       </div>
     </div>
   );
