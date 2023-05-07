@@ -119,7 +119,7 @@ export const Grafico = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="containezao">
       <div className="divPai">
         <h1>Países que sofrem com a poluição Têxtil</h1>
         
