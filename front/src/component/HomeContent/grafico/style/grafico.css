@@ -60,19 +60,19 @@ tr {
     text-align: center;
 }
 
-h1 {
+.divPai h1 {
     font-weight: 0.5vw;
     align-items: center;
     font-size: 3.20vw;
 }
-h2{
+.divPai h2{
     font-weight: 0.5vw;
     align-items: center;
     font-size: 1.20vw;
 }
+
 .imagem {
     width: 100%;
-    /* height: 20vw; */
     padding: 10px 25px;
 }
 

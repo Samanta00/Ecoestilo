@@ -9,6 +9,10 @@
   margin-right: 12px;
 }
 
+.objetivo p {
+  font-size: 1.1em;
+}
+
 .sobreImagemDiretia {
   width: 100%;
   display: flex;
